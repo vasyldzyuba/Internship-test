@@ -5,12 +5,29 @@
 
 .container {
 	width: 100%;
-	height: 560px;
+	height: 540px;
 	background-color: rgb(215, 213, 212);
 }
 
 h1 {
-	margin-left: 42%;
+	margin-left: 39%;
+}
+
+.knowledge {
+	font-size: 17px;
+	font-weight: 700;
+}
+
+h3 {
+	color: darkslategrey;
+	margin-left: 22%;
+}
+
+footer {
+	width: 100%;
+	height: 80px;
+	background-color: aqua;
+	bottom: 0;
 }
 
 .interns {
@@ -24,7 +41,7 @@ h1 {
 }
 
 li {
-	line-height: 2.2;
+	line-height: 2.3;
 	font-size: 17px;
-	font-weight: 500;
+	font-weight: 600;
 }

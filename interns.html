@@ -1,17 +1,17 @@
-<div class="container">
+<div>
 	<div class="row">
 		<div class="row d-flex col-12">
 			<h1>Students list</h1>
-<!--			<h1>InterLink internship test. Made by Vasyl Dzyuba.</h1>-->
+			<h3>InterLink internship test. Made by Vasyl Dzyuba.</h3>
 		</div>
 		<div class="row">
 			<div class="col-6 form-group allStudents">
 				<form action="">
-					<h4 class="ml-4">List of all students:</h4>
-					
+					<h4>List of all students:</h4>
+
 					<ol>
-						<li class="m-1" ng-repeat="new in interns.students"><span>{{new.firstName}}</span> :
-							knowledge is - <span>{{new.knowledge}}</span>
+						<li ng-repeat="new in interns.students"><span>{{new.firstName}}</span>:
+							knowledge is - <span class="knowledge">{{new.knowledge}}</span>
 							<button type="button" class="btn-sm btn btn-outline-danger" ng-click='interns.removeStudent($index)'>Remove</button>
 						</li>
 					</ol>
@@ -19,10 +19,9 @@
 			</div>
 			<div class="col-6 form-group interns">
 				<form action="" class="internsForm">
-					<h4 class="ml-2">List of all students at internship:</h4>
+					<h4>List of all students at internship:</h4>
 					<ol>
-						<li class="m-1" ng-repeat="new in interns.students | filter : 'Upper' : true"><span>{{new.firstName}}</span>
-							: knowledge is - <span>{{new.knowledge}}</span></li>
+						<li ng-repeat="new in interns.students | filter : 'Upper' : true"><span>{{new.firstName}}</span>: knowledge is - <span class="knowledge">{{new.knowledge}}</span></li>
 					</ol>
 				</form>
 			</div>

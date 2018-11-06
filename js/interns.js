@@ -25,8 +25,8 @@ app.controller('internsCtrl', function () {
 		}, {
 			id: 6,
 			firstName: 'Victoria',
-			knowledge: 'Basic'
-		},{
+			knowledge: 'Upper'
+		}, {
 			id: 8,
 			firstName: 'Pavlo',
 			knowledge: 'Basic'
@@ -35,16 +35,20 @@ app.controller('internsCtrl', function () {
 			firstName: 'Vitalii',
 			knowledge: 'Upper'
 		}, {
-			id: 10,
-			firstName: 'Vasyl',
+			id: 11,
+			firstName: 'Orest',
 			knowledge: 'Basic'
 		}, {
-			id: 11,
+			id: 12,
+			firstName: 'Iryna',
+			knowledge: 'Upper'
+		}, {
+			id: 13,
 			firstName: 'Orest',
 			knowledge: 'Basic'
 		}
 	];
-		vm.removeStudent = function (index) {
+	vm.removeStudent = function (index) {
 		vm.students.splice(index, 1);
 	}
 })
